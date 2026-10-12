@@ -3,6 +3,12 @@ import pandas as pd
 import os
 
 os.makedirs('../data/processed', exist_ok=True)
+
+# ✅ 每次运行前删除旧数据库，避免数据重复
+if os.path.exists('../data/price.db'):
+    os.remove('../data/price.db')
+    print('🗑️  已删除旧数据库')
+
 conn = sqlite3.connect('../data/price.db')
 
 # 建表
