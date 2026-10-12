@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/price.db
+outputs/*.pkl
+.idea/
+.vscode/
